@@ -12,6 +12,7 @@ This is a simple web application that helps to organize your work & life
 ---
 
 ### Link
+[Link to the application](https://todo-next-js-eight-gamma.vercel.app/). Deployed with Vercel.
 
 ### Figma template
 [Figma design](https://www.figma.com/file/45oNIb4ed4VkvFZsE6Me0E/TodoList_Tokarenko?type=design&node-id=0%3A1&mode=design&t=N9YudzqNLQcauWHw-1)

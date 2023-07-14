@@ -1,0 +1,11 @@
+.toggle-switch {
+  @apply w-[42px] h-6 flex flex-row px-0.5 box-border items-center rounded-xl bg-auxiliary-text
+}
+
+.toggle-switch__pin {
+  @apply w-5 h-5 rounded-full bg-white
+}
+
+.toggle-switch_active {
+  @apply justify-end
+}

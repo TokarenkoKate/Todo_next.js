@@ -1,0 +1,19 @@
+.filter-button {
+  @apply flex flex-col gap-[10px] justify-center
+}
+
+.filter-button__text {
+  @apply m-0 text-main-text text-base
+}
+
+.filter-button__underline {
+  @apply w-full h-1 bg-accent-green opacity-0
+}
+
+.filter-button_active .filter-button__text {
+  @apply font-bold
+}
+
+.filter-button_active .filter-button__underline {
+  @apply opacity-100
+}

@@ -1,0 +1,15 @@
+.header {
+  @apply flex flex-row justify-between items-center mb-10
+}
+
+.header__titles-group {
+  @apply flex flex-col gap-4
+}
+
+.header__title {
+  @apply m-0 text-3xl text-main-text font-bold
+}
+
+.header__subtitle {
+  @apply m-0 text-lg text-auxiliary-text
+}

@@ -1,0 +1,35 @@
+.tasks-table {
+  @apply flex flex-col divide-y divide-stroke
+}
+
+.tasks-table__head .tasks-table__row {
+  @apply bg-components-bg
+}
+
+.tasks-table__list-item:first-of-type p {
+  @apply text-main-text
+}
+
+.tasks-table__head p {
+  @apply text-sm text-auxiliary-text font-bold uppercase
+}
+
+.tasks-table__head .tasks-table__list-item:first-of-type p {
+  @apply px-20 text-auxiliary-text
+}
+
+.tasks-table__row {
+  @apply m-0 p-0 list-none flex flex-row h-[60px] items-center
+}
+
+.tasks-table__list-item {
+  @apply min-w-[260px] flex flex-row justify-center px-2 items-center
+}
+
+.tasks-table__list-item:first-of-type {
+  @apply max-w-full flex-1 justify-start
+}
+
+.tasks-table__body {
+  @apply flex flex-col divide-y divide-stroke
+}

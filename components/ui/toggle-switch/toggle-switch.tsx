@@ -1,5 +1,6 @@
 "use client"
 
+import { motion } from "framer-motion"
 import "./toggle-switch.css"
 
 interface ToggleSwitchProps {
@@ -13,7 +14,15 @@ export default function ToggleSwitch({ active, onClick }: ToggleSwitchProps) {
       className={`toggle-switch ${active ? "toggle-switch_active" : ""}`}
       onClick={onClick}
     >
-      <div className="toggle-switch__pin" />
+      <motion.div
+        className="toggle-switch__pin"
+        layout
+        transition={{
+          type: "spring",
+          stiffness: 700,
+          damping: 30,
+        }}
+      />
     </div>
   )
 }

@@ -1,12 +1,13 @@
 "use client"
-import "./tasks.css"
 
+import "./tasks.css"
 import { useEffect, useState } from "react"
 import { useAppSelector } from "@/hooks/redux"
 import { getAllTasks, getFilters } from "@/store/tasks/selectors"
 import { TaskProps } from "@/types/tasks"
 import { filterTasksByCompleteStatus } from "@/lib/filter-utils"
 import TaskRow from "./task-row/task-row"
+import { AnimatePresence } from "framer-motion"
 
 export default function Tasks() {
   const allTasks = useAppSelector(getAllTasks)
@@ -41,20 +42,18 @@ export default function Tasks() {
           </ul>
         </div>
         <div className="tasks-table__body">
-          {tasks.length !== 0 ? (
-            tasks.map((task) => (
-              <TaskRow
-                key={task.id}
-                task={task}
-              />
-            ))
-          ) : (
-            <ul className="tasks-table__row">
-              <li className="tasks-table__list-item">
-                <p>Nothing found</p>
-              </li>
-            </ul>
-          )}
+          <AnimatePresence initial={false}>
+            {tasks.length !== 0 ? (
+              tasks.map((task) => (
+                <TaskRow
+                  key={task.id}
+                  task={task}
+                />
+              ))
+            ) : (
+              <TaskRow key={"Nothion found"} />
+            )}
+          </AnimatePresence>
         </div>
       </div>
     </section>

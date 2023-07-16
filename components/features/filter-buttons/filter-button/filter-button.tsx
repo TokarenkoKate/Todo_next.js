@@ -1,4 +1,5 @@
 import "./filter-button.css"
+import { motion } from "framer-motion"
 
 export default function FilterButton({
   value,
@@ -14,12 +15,17 @@ export default function FilterButton({
   const active = value === activeButtonValue
   return (
     <button
-      className={`filter-button ${active ? 'filter-button_active' : ''} `}
+      className={`filter-button ${active ? "filter-button_active" : ""} `}
       type="button"
       onClick={() => onClickSetButtonActive(value)}
     >
       <span className="filter-button__text">{title}</span>
-      <div className="filter-button__underline" />
+      {active && (
+        <motion.span
+          layoutId="underline"
+          className="filter-button__underline"
+        />
+      )}
     </button>
   )
 }

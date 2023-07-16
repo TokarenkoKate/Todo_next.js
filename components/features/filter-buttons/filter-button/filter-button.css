@@ -1,5 +1,5 @@
 .filter-button {
-  @apply flex flex-col gap-2 lg:gap-[10px] justify-center
+  @apply min-h-[32px] flex flex-col gap-2 lg:gap-[10px]
 }
 
 .filter-button__text {
@@ -7,13 +7,9 @@
 }
 
 .filter-button__underline {
-  @apply w-full h-1 bg-accent-green opacity-0
+  @apply w-full h-1 bg-accent-green
 }
 
 .filter-button_active .filter-button__text {
   @apply font-bold
-}
-
-.filter-button_active .filter-button__underline {
-  @apply opacity-100
 }

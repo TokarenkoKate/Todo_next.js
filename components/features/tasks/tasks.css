@@ -23,7 +23,15 @@
 }
 
 .tasks-table__list-item {
-  @apply min-w-[80px] md:min-w-[260px] flex flex-row justify-center px-2 items-center
+  @apply min-w-[80px] md:min-w-[260px] flex flex-row justify-center items-center px-2
+}
+
+.tasks-table__list-item p {
+  @apply transition
+}
+
+.task-table__list-item_active p {
+  @apply opacity-80 line-through
 }
 
 .tasks-table__list-item:first-of-type {

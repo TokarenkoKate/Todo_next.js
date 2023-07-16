@@ -4,8 +4,8 @@ import "./custom-button.css"
 import clsx from "clsx"
 
 const buttonSizes = {
-  small: "h-9 py-2 px-3.5",
-  medium: "h-10 py-3 px-3.5",
+  small: "h-9 px-2 md:px-3.5",
+  medium: "h-[37px] lg:h-10 py-2 lg:py-3 px-3 lg:px-3.5",
 }
 
 const buttonColors = {
@@ -51,10 +51,12 @@ export default function CustomButton({
     >
       {leftIcon && leftIcon}
       <span
-        className={clsx("flex-1", {
-          [textStyles as string]: textStyles,
-          ["text-white"]: !textStyles,
-        })}
+        className={clsx(
+          {
+            [textStyles as string]: textStyles,
+          },
+          "flex-1"
+        )}
       >
         {title}
       </span>

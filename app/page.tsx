@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="main">
       <FilterButtons />
-      <SeparatorLine className='mb-5' />
+      <SeparatorLine />
       <AddTodo />
       <Tasks />
     </main>

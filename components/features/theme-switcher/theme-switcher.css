@@ -1,7 +1,7 @@
 .theme-switcher {
-  @apply flex flex-row items-center gap-3
+  @apply flex flex-row items-center gap-1 lg:gap-3
 }
 
 .theme-switcher__title {
-  @apply m-0 text-auxiliary-text text-lg
+  @apply hidden sm:inline m-0 text-auxiliary-text text-sm md:text-base lg:text-lg
 }

@@ -7,23 +7,23 @@
 }
 
 .tasks-table__list-item:first-of-type p {
-  @apply text-main-text
+  @apply text-main-text text-xs lg:text-base
 }
 
 .tasks-table__head p {
-  @apply text-sm text-auxiliary-text font-bold uppercase
+  @apply text-xs lg:text-sm text-auxiliary-text font-bold uppercase
 }
 
 .tasks-table__head .tasks-table__list-item:first-of-type p {
-  @apply px-20 text-auxiliary-text
+  @apply px-0 md:px-16 lg:px-20 text-auxiliary-text
 }
 
 .tasks-table__row {
-  @apply m-0 p-0 list-none flex flex-row h-[60px] items-center
+  @apply m-0 p-0 list-none flex flex-row h-12 lg:h-[60px] items-center
 }
 
 .tasks-table__list-item {
-  @apply min-w-[260px] flex flex-row justify-center px-2 items-center
+  @apply min-w-[80px] md:min-w-[260px] flex flex-row justify-center px-2 items-center
 }
 
 .tasks-table__list-item:first-of-type {

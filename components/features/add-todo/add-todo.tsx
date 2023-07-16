@@ -45,6 +45,7 @@ export default function AddTodo() {
             size="medium"
             color="green"
             btnType="submit"
+            textStyles="hidden sm:inline text-white"
             isDisabled={!newTask}
             leftIcon={<AddIcon />}
           />

@@ -1,9 +1,9 @@
 .filter-button {
-  @apply flex flex-col gap-[10px] justify-center
+  @apply flex flex-col gap-2 lg:gap-[10px] justify-center
 }
 
 .filter-button__text {
-  @apply m-0 text-main-text text-base
+  @apply m-0 text-main-text text-sm lg:text-base
 }
 
 .filter-button__underline {

@@ -25,7 +25,7 @@ export default function CustomCheckbox({
       <TickIcon className="absolute w-4 h-4 mt-1 hidden peer-checked:block pointer-events-none" />
       <label
         htmlFor={id}
-        className="text-base font-semibold text-accent-red peer-checked:text-accent-green"
+        className="hidden md:inline text-base font-semibold text-accent-red peer-checked:text-accent-green"
       >
         {label}
       </label>

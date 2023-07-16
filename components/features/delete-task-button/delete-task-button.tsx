@@ -17,7 +17,7 @@ export default function DeleteTaskButton({ taskId }: { taskId: string }) {
       title="Delete"
       size="small"
       color="gray"
-      textStyles="text-auxiliary-text"
+      textStyles="text-auxiliary-text hidden md:inline"
       leftIcon={<DeleteIcon />}
       onClick={handleDeleteTask}
     />

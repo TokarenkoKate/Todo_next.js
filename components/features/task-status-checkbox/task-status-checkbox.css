@@ -1,5 +1,5 @@
 .task-status-checkbox {
-  @apply min-w-[131px] h-9 flex flex-row items-center px-2.5 bg-accent-light-red rounded
+  @apply min-w-min md:min-w-[131px] h-9 flex flex-row items-center px-2 md:px-2.5 bg-accent-light-red rounded
 }
 
 .task-status-checkbox_checked {

@@ -1,9 +1,9 @@
 .toggle-switch {
-  @apply w-[42px] h-6 flex flex-row px-0.5 box-border items-center rounded-xl bg-auxiliary-text
+  @apply w-8 lg:w-[42px] h-5 lg:h-6 flex flex-row px-0.5 box-border items-center rounded-xl bg-auxiliary-text
 }
 
 .toggle-switch__pin {
-  @apply w-5 h-5 rounded-full bg-white
+  @apply w-4 lg:w-5 h-4 lg:h-5 rounded-full bg-white
 }
 
 .toggle-switch_active {
